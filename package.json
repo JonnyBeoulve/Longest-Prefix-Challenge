@@ -1,0 +1,19 @@
+{
+  "name": "longest-prefix-challenge",
+  "description": "My 2-hour coding challenge mini-project that finds the longest prefix among a library of strings for a string input by the user.",
+  "version": "1.0.0",
+  "author": "Jonathan Leack",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

@@ -1,0 +1,71 @@
+/*======================================================================
+// App container styling.
+======================================================================*/
+.app {
+  text-align: center;
+}
+
+/*======================================================================
+// Header text styling;
+======================================================================*/
+.header {
+  background-color: #ffe800;
+  padding: 50px 0 50px 0;
+  margin: 0;
+  font-size: 3em;
+}
+
+/*======================================================================
+// List strings div styling.
+======================================================================*/
+.list-strings-div {
+  padding: 50px 0 50px 0;
+}
+
+.user-string-add-input {
+  height: 30px;
+  width: 200px;
+}
+
+.user-string-add-button {
+  height: 36px;
+  width: 140px;
+  cursor: pointer;
+}
+
+/*======================================================================
+// User input match div styling.
+======================================================================*/
+.user-string-div {
+  background-color: #f2f2f2;
+  padding: 100px 0 100px 0;
+}
+
+.user-string-input {
+  height: 30px;
+  width: 200px;
+}
+
+.user-string-button {
+  height: 36px;
+  width: 140px;
+  cursor: pointer;
+}
+
+.results {
+  padding: 10px 0 0 0;
+}
+
+.results-empty {
+  padding: 52px;
+}
+
+/*======================================================================
+// Footer styling.
+======================================================================*/
+.footer {
+  background-color: #1a1a1a;
+  line-height: 200px;
+  color: white;
+  height: 200px;
+}

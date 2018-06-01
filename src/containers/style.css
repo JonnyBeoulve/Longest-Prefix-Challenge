@@ -1,8 +1,20 @@
 /*======================================================================
-// App container styling.
+// General styling.
 ======================================================================*/
 .app {
   text-align: center;
+}
+
+a:visited {
+  color: white;
+}
+
+a:visited:hover {
+  color: #ffe800;
+}
+
+h3 {
+  font-size: 2em;
 }
 
 /*======================================================================
@@ -13,24 +25,53 @@
   padding: 50px 0 50px 0;
   margin: 0;
   font-size: 3em;
+
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
 }
 
 /*======================================================================
 // List strings div styling.
 ======================================================================*/
 .list-strings-div {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 110px 0;
 }
 
 .user-string-add-input {
-  height: 30px;
-  width: 200px;
+  height: 20px;
+  width: 220px;
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #999;
+  font-family: inherit;
+
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+  box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+}
+
+.user-string-add-input:focus {
+  border: 2px solid #ffe800;
 }
 
 .user-string-add-button {
-  height: 36px;
+  height: 46px;
   width: 140px;
+  margin-left: 10px;
   cursor: pointer;
+  border-radius: 3px;
+  font-family: inherit;
+
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+  box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+}
+
+.user-string-add-button:hover {
+  -webkit-box-shadow: 0px 1px 8px 2px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 1px 8px 2px rgba(153,153,153,1);
+  box-shadow: 0px 1px 8px 2px rgba(153,153,153,1);
 }
 
 /*======================================================================
@@ -38,18 +79,44 @@
 ======================================================================*/
 .user-string-div {
   background-color: #f2f2f2;
-  padding: 100px 0 100px 0;
+  padding: 50px 0 110px 0;
+  border-top: 1px solid #ddd;
 }
 
 .user-string-input {
-  height: 30px;
-  width: 200px;
+  height: 20px;
+  width: 220px;
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px;
+  border: 2px solid #999;
+  font-family: inherit;
+
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+  box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+}
+
+.user-string-input:focus {
+  border: 2px solid #ffe800;
 }
 
 .user-string-button {
-  height: 36px;
+  height: 46px;
   width: 140px;
+  margin-left: 10px;
   cursor: pointer;
+  border-radius: 3px;
+  font-family: inherit;
+
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+  box-shadow: 0px 1px 5px 1px rgba(153,153,153,1);
+}
+
+.user-string-button:hover {
+  -webkit-box-shadow: 0px 1px 8px 2px rgba(153,153,153,1);
+  -moz-box-shadow: 0px 1px 8px 2px rgba(153,153,153,1);
+  box-shadow: 0px 1px 8px 2px rgba(153,153,153,1);
 }
 
 .results {
@@ -57,7 +124,11 @@
 }
 
 .results-empty {
-  padding: 52px;
+  padding: 30px;
+}
+
+.results-string {
+  border-bottom: 2px solid #ffe800;
 }
 
 /*======================================================================
@@ -65,7 +136,7 @@
 ======================================================================*/
 .footer {
   background-color: #1a1a1a;
-  line-height: 200px;
+  line-height: 400px;
   color: white;
-  height: 200px;
+  height: 400px;
 }

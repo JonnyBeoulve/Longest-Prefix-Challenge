@@ -139,14 +139,15 @@ class App extends Component {
             {this.state.prefixStrings.map((listString) => {
               return <p className="list-string">{listString}</p>
             })}
-          <input className="user-string-add-input" type="text" name="user-string" placeholder="Enter a string to add" value={this.state.userStringAdd} onChange={this.handleStringAddChange.bind(this)} />
+          <input className="user-string-add-input" type="text" name="user-string" placeholder="Enter a string to add (optional)" value={this.state.userStringAdd} onChange={this.handleStringAddChange.bind(this)} />
           <button className="user-string-add-button" onClick={this.handleStringAdd.bind(this)}>Add String</button>
         </div>
         <div className={["user-string-div", css(styles.slideInLeft)].join(' ')}>
+          <h3>Find Match</h3>
           <input className="user-string-input" type="text" name="user-string" placeholder="Enter a string to match" value={this.state.userStringMatch} onChange={this.handleStringInputChange.bind(this)} />
           <button className="user-string-button" onClick={this.findLongestPrefix.bind(this)}>Find Longest Prefix</button>
         {(this.state.showResult)
-            ? <div className="results"><h3>Longest Matching String</h3><p>{this.state.longestString}</p></div>
+            ? <div className="results"><p>Longest Matching String: <span className="results-string">{this.state.longestString}</span></p></div>
             : <div className="results-empty"></div> }
         </div>
         <footer className="footer">Made by <a href="http://www.jonathanleack.com/" target="_blank" rel="noopener noreferrer">Jonathan Leack</a></footer>
